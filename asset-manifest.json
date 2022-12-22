@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pronunciation/static/css/main.6bd42557.css",
+    "main.js": "/pronunciation/static/js/main.e21c464a.js",
+    "static/js/787.7fb3c358.chunk.js": "/pronunciation/static/js/787.7fb3c358.chunk.js",
+    "index.html": "/pronunciation/index.html",
+    "main.6bd42557.css.map": "/pronunciation/static/css/main.6bd42557.css.map",
+    "main.e21c464a.js.map": "/pronunciation/static/js/main.e21c464a.js.map",
+    "787.7fb3c358.chunk.js.map": "/pronunciation/static/js/787.7fb3c358.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bd42557.css",
+    "static/js/main.e21c464a.js"
+  ]
+}
