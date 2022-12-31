@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pronunciation/static/css/main.cdea3b47.css",
+    "main.css": "/pronunciation/static/css/main.a8d72d4f.css",
     "main.js": "/pronunciation/static/js/main.fb33efaf.js",
     "static/js/787.7fb3c358.chunk.js": "/pronunciation/static/js/787.7fb3c358.chunk.js",
     "index.html": "/pronunciation/index.html",
-    "main.cdea3b47.css.map": "/pronunciation/static/css/main.cdea3b47.css.map",
+    "main.a8d72d4f.css.map": "/pronunciation/static/css/main.a8d72d4f.css.map",
     "main.fb33efaf.js.map": "/pronunciation/static/js/main.fb33efaf.js.map",
     "787.7fb3c358.chunk.js.map": "/pronunciation/static/js/787.7fb3c358.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdea3b47.css",
+    "static/css/main.a8d72d4f.css",
     "static/js/main.fb33efaf.js"
   ]
 }
