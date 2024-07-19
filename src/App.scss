@@ -1,0 +1,206 @@
+@import "_confirm.scss";
+
+@mixin inputarea {
+  &_inputbox{
+    align-items: center;
+    width: -webkit-fill-available;
+    &_head{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      &_target{
+        width: 30%;
+      }
+      &_explication{
+        width: 70%;
+        margin: 0px 5px;
+      }
+    }
+    &_buttom{
+      &_example{
+        width: -webkit-fill-available; 
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.App {
+  padding: 30px 10%;
+  font-weight: 600;
+  min-height: 800px;
+  &_header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    &_no{
+      flex: auto;
+    }
+    &_setting{
+      font-size: 1.5rem;
+      & > *{
+        width: 24px;
+        margin-left: 10px;
+      }
+    }
+  }
+  &_input{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    @include inputarea;
+  }
+  &_listitem{
+    &_hidden{
+      font-size: 1.5rem;
+          text-align: right;
+          margin-right: 30px;
+      & >*{
+        margin: 0 10px;
+      }
+    }
+  }
+  &_modify{
+    position: fixed;
+    z-index: 10;
+    top: 150px;
+    left: 0px;
+    background: white;
+    box-shadow: 5px 5px 15px -3px rgba(0, 0, 0 , 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: -webkit-fill-available;
+    @include inputarea;
+    &_submit{
+      & > * {
+        margin: 0 15px;
+      }
+    }
+    textarea{
+      height: 100px;
+    }
+  }
+}
+
+textarea{
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 40px;
+  box-shadow: 0px 0px 15px 0px rgba(204, 204, 204, 0.7);
+}
+
+.fa-pencil{
+  margin-right: 10px;
+}
+
+@keyframes btn-popup {
+  from {
+      transform: translateY(50%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0%);
+      opacity: 100;
+  }
+}
+
+@keyframes playing-popup {
+  from {
+      transform: translate(50%,-50%);
+      opacity: 0;
+  }
+  to {
+    transform: translate(0%,-50%);
+      opacity: 100;
+  }
+}
+
+.floatingObj{
+  position: fixed;
+  top: 85%;
+  right: 0px;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  &_playallpause{
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    transform: translateY(-50%);
+    animation: playing-popup 1s;
+    //padding: 1px 12px 1px;
+    width: 60px;
+    margin-bottom: 15px;
+  }
+  &_playallcancel{
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    transform: translateY(-50%);
+    animation: playing-popup 1s;
+    //padding: 1px 12px 1px;
+    width: 60px;
+    margin-bottom: 50px;
+  }
+  &_nextpage{
+    display: flex;
+    &_icon{
+      border: none;
+      background-color: transparent;
+      font-size: 2rem;
+      width: 60px;
+      margin-bottom: 10px;
+    }
+  }
+  &_findinpage{
+    display: flex;
+    &_icon{
+      border: none;
+      background-color: transparent;
+      font-size: 2rem;
+      width: 60px;
+    }
+    &_content{
+      display: flex;
+      margin-right: 20px;
+      &_box{
+        border: none;
+        font-size: 1rem;
+        box-shadow: 0px 0px 15px 10px rgba(204, 204, 204, 0.7);
+        border-radius: 8px;
+        font-weight: 600;
+      }
+      &_x{
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 600;     
+        margin-left: 10px; 
+        color: rgba(128, 128, 128, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+  &_totopbutton{
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    //transform: translateY(-50%);
+    animation: btn-popup 1s;
+    width: 60px;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
